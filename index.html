@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обеспечение информационной безопасности автоматизированных систем — День открытых дверей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <h1>Обеспечение информационной безопасности автоматизированных систем</h1>
+        <p class="subtitle">Специальность 10.02.05</p>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. Время обучения и корпус -->
+        <section class="info-block">
+            <div class="info-card">
+                <h2>⏱ Срок обучения</h2>
+                <p>На базе 9 классов — <b>3 года 10 месяцев</b></p>
+            </div>
+            <div class="info-card">
+                <h2>🏫 Корпус</h2>
+                <p>Обучение проходит в <b>Корпус Угреша</b></p>
+                <p>Адрес: г. Дзержинский, ул. Академика Жукова, 24</p>
+            </div>
+        </section>
+
+        <!-- 2. Расписание -->
+       <!-- 2. Расписание -->
+<section class="schedule-block">
+    <h2>📅 Расписание занятий</h2>
+    
+    <!-- Переключатели недель -->
+    <div class="schedule-tabs">
+        <button class="tab-btn active" data-tab="odd">Нечётная неделя</button>
+        <button class="tab-btn" data-tab="even">Чётная неделя</button>
+    </div>
+
+    <!-- Нечётная неделя -->
+    <div id="odd" class="tab-content active">
+        <div class="table-wrapper">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Дисциплина</th>
+                        <th>Преподаватель</th>
+                        <th>Аудитория</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="day-header"><td colspan="4">Понедельник</td></tr>
+                    <tr><td>8:30–10:00</td><td>Введение в специальность</td><td>Тарджиманян Л.Н.</td><td>ауд. 202</td></tr>
+                    <tr><td>10:10–11:40</td><td>Информатика</td><td>Тарджиманян Л.Н.</td><td>ауд. 202</td></tr>
+                    <tr><td>12:00–13:30</td><td>Физика</td><td>Кондакова Г.М.</td><td>ауд. 208</td></tr>
+                    <tr><td>13:40–15:20</td><td class="free-period">—</td><td>—</td><td>—</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Вторник</td></tr>
+                    <tr><td>8:30–10:00</td><td>Математика</td><td>Куликова О.В.</td><td>ауд. 402</td></tr>
+                    <tr><td>10:10–11:40</td><td>Обществознание</td><td>Бахаева Г.Р.</td><td>ауд. 302</td></tr>
+                    <tr><td>12:00–13:30</td><td>Русский язык</td><td>Алискерова Р.Г.</td><td>ауд. 401</td></tr>
+                    <tr><td>13:40–15:20</td><td>История</td><td>Чурилина О.Ю.</td><td>ауд. 104</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Среда</td></tr>
+                    <tr><td>8:30–10:00</td><td>Информатика</td><td>Тарджиманян Л.Н.</td><td>ауд. 202</td></tr>
+                    <tr><td>10:10–11:40</td><td>Химия</td><td>Марютина А.Ю.</td><td>ауд. 407</td></tr>
+                    <tr><td>12:00–13:30</td><td>Основы безопасности и защиты Родины</td><td>Капранова А.В.</td><td>ауд. 102</td></tr>
+                    <tr><td>13:40–15:20</td><td>География</td><td>Чулькина И.М.</td><td>ауд. 206</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Четверг</td></tr>
+                    <tr><td>8:30–10:00</td><td>Математика</td><td>Куликова О.В.</td><td>ауд. 402</td></tr>
+                    <tr><td>10:10–11:40</td><td>Физическая культура</td><td>Дидаева А.В.</td><td>Спортзал</td></tr>
+                    <tr><td>12:00–13:30</td><td>Литература</td><td>Алискерова Р.Г.</td><td>ауд. 401</td></tr>
+                    <tr><td>13:40–15:20</td><td>История</td><td>Чурилина О.Ю.</td><td>ауд. 104</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Пятница</td></tr>
+                    <tr><td>8:30–10:00</td><td class="free-period">—</td><td>—</td><td>—</td></tr>
+                    <tr><td>10:10–11:40</td><td>Биология</td><td>Марютина А.Ю.</td><td>ауд. 407</td></tr>
+                    <tr><td>12:00–13:30</td><td>Математика</td><td>Куликова О.В.</td><td>ауд. 402</td></tr>
+                    <tr><td>13:40–15:20</td><td>Физика</td><td>Кондакова Г.М.</td><td>ауд. 208</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Чётная неделя -->
+    <div id="even" class="tab-content">
+        <div class="table-wrapper">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Дисциплина</th>
+                        <th>Преподаватель</th>
+                        <th>Аудитория</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="day-header"><td colspan="4">Понедельник</td></tr>
+                    <tr><td>8:30–10:00</td><td>Введение в специальность</td><td>Тарджиманян Л.Н.</td><td>ауд. 202</td></tr>
+                    <tr><td>10:10–11:40</td><td>Информатика</td><td>Тарджиманян Л.Н.</td><td>ауд. 202</td></tr>
+                    <tr><td>12:00–13:30</td><td>Физика</td><td>Кондакова Г.М.</td><td>ауд. 208</td></tr>
+                    <tr><td>13:40–15:20</td><td>Иностранный язык</td><td>Есикова Ю.В.</td><td>ауд. 410 (2 гр.)</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Вторник</td></tr>
+                    <tr><td>8:30–10:00</td><td>Математика</td><td>Куликова О.В.</td><td>ауд. 402</td></tr>
+                    <tr><td>10:10–11:40</td><td>Обществознание</td><td>Бахаева Г.Р.</td><td>ауд. 302</td></tr>
+                    <tr><td>12:00–13:30</td><td>Русский язык</td><td>Алискерова Р.Г.</td><td>ауд. 401</td></tr>
+                    <tr><td>13:40–15:20</td><td>История</td><td>Чурилина О.Ю.</td><td>ауд. 104</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Среда</td></tr>
+                    <tr><td>8:30–10:00</td><td>Индивидуальный проект</td><td>Тарджиманян Л.Н.</td><td>ауд. 202</td></tr>
+                    <tr><td>10:10–11:40</td><td>Химия</td><td>Марютина А.Ю.</td><td>ауд. 407</td></tr>
+                    <tr><td>12:00–13:30</td><td>Основы безопасности и защиты Родины</td><td>Капранова А.В.</td><td>ауд. 102</td></tr>
+                    <tr><td>13:40–15:20</td><td>География</td><td>Чулькина И.М.</td><td>ауд. 206</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Четверг</td></tr>
+                    <tr><td>8:30–10:00</td><td>Математика</td><td>Куликова О.В.</td><td>ауд. 402</td></tr>
+                    <tr><td>10:10–11:40</td><td>Физическая культура</td><td>Дидаева А.В.</td><td>Спортзал</td></tr>
+                    <tr><td>12:00–13:30</td><td>Литература</td><td>Алискерова Р.Г.</td><td>ауд. 401</td></tr>
+                    <tr><td>13:40–15:20</td><td>Математика</td><td>Кузьмина О.В.</td><td>ауд. 402</td></tr>
+
+                    <tr class="day-header"><td colspan="4">Пятница</td></tr>
+                    <tr><td>8:30–10:00</td><td>Иностранный язык</td><td>Вахаб К.Н.</td><td>ауд. 304 (1 гр.)</td></tr>
+                    <tr><td>10:10–11:40</td><td>Биология</td><td>Марютина А.Ю.</td><td>ауд. 407</td></tr>
+                    <tr><td>12:00–13:30</td><td>Математика</td><td>Куликова О.В.</td><td>ауд. 402</td></tr>
+                    <tr><td>13:40–15:20</td><td class="free-period">—</td><td>—</td><td>—</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+       <!-- 3. Блок с фото -->
+<section class="gallery-block">
+    <h2>📸 Фотогалерея</h2>
+    <div class="gallery">
+        <div class="photo" data-index="0">
+            <img src="images/foto1.png" alt="Компьютерный класс" class="gallery-img">
+            <p>Сам техникум</p>
+        </div>
+        <div class="photo" data-index="1">
+            <img src="images/foto2.png" alt="Лаборатория" class="gallery-img">
+            <p>Современный компьютерный класс</p>
+        </div>
+        <div class="photo" data-index="2">
+            <img src="images/foto3.png" alt="Студенты" class="gallery-img">
+            <p>Студенты за работой</p>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox (модальное окно для просмотра фото) -->
+<div id="lightbox" class="lightbox hidden">
+    <button class="lightbox-close" aria-label="Закрыть">&times;</button>
+    <button class="lightbox-prev" aria-label="Предыдущее фото">&#10094;</button>
+    <button class="lightbox-next" aria-label="Следующее фото">&#10095;</button>
+    <img src="" alt="" class="lightbox-img">
+    <div class="lightbox-caption"></div>
+</div>
+
+        <!-- 4. Квиз -->
+        <section class="quiz-block">
+            <h2>🎯 Подходит ли вам эта специальность?</h2>
+            <p class="quiz-intro">Ответьте на 5 коротких вопросов, чтобы узнать, насколько вам подходит IT-направление.</p>
+
+            <form id="quizForm">
+                <div class="question" data-question="1">
+                    <p><b>1.</b> Вам нравится решать логические задачи и головоломки?</p>
+                    <label><input type="radio" name="q1" value="yes" required> Да, это моё любимое</label>
+                    <label><input type="radio" name="q1" value="maybe"> Иногда</label>
+                    <label><input type="radio" name="q1" value="no"> Не очень</label>
+                </div>
+
+                <div class="question" data-question="2">
+                    <p><b>2.</b> Готовы ли вы проводить много времени за компьютером?</p>
+                    <label><input type="radio" name="q2" value="yes" required> Да, без проблем</label>
+                    <label><input type="radio" name="q2" value="maybe"> В разумных пределах</label>
+                    <label><input type="radio" name="q2" value="no"> Нет, люблю активность</label>
+                </div>
+
+                <div class="question" data-question="3">
+                    <p><b>3.</b> Вам интересно, как работают программы и сайты?</p>
+                    <label><input type="radio" name="q3" value="yes" required> Очень интересно</label>
+                    <label><input type="radio" name="q3" value="maybe"> Немного</label>
+                    <label><input type="radio" name="q3" value="no"> Нет</label>
+                </div>
+
+                <div class="question" data-question="4">
+                    <p><b>4.</b> Усидчивость — про вас?</p>
+                    <label><input type="radio" name="q4" value="yes" required> Да</label>
+                    <label><input type="radio" name="q4" value="maybe"> Бывает по-разному</label>
+                    <label><input type="radio" name="q4" value="no"> Скорее нет</label>
+                </div>
+
+                <div class="question" data-question="5">
+                    <p><b>5.</b> Вам нравится учиться новому самостоятельно?</p>
+                    <label><input type="radio" name="q5" value="yes" required> Да, обожаю</label>
+                    <label><input type="radio" name="q5" value="maybe"> Иногда</label>
+                    <label><input type="radio" name="q5" value="no"> Предпочитаю, чтобы объясняли</label>
+                </div>
+
+                <button type="submit" class="btn">Узнать результат</button>
+            </form>
+
+            <div id="quizResult" class="quiz-result hidden"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© Колледж · День открытых дверей 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
