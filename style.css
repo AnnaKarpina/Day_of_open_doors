@@ -537,3 +537,47 @@ tr:hover {
         width: 100%;
     }
 }
+
+/* ========== БЛОК «ЧТО ВАС ЖДЁТ В ОБУЧЕНИИ» ========== */
+.subjects-intro {
+    color: #fff1d2;
+    margin-bottom: 20px;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.subject-card {
+    background: linear-gradient(135deg, rgba(255, 241, 210, 0.08), rgba(163, 62, 126, 0.1));
+    border: 1px solid rgba(209, 138, 117, 0.3);
+    border-left: 4px solid #a33e7e;
+    border-radius: 14px;
+    padding: 18px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(163, 62, 126, 0.3);
+}
+
+.subject-card h3 {
+    color: #d18a75;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.subject-card p {
+    color: #fff1d2;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+}
