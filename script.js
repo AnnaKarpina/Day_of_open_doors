@@ -169,19 +169,3 @@ function handleSwipe() {
     }
 }
 
-// ========== ПЕРЕКЛЮЧЕНИЕ ВКЛАДОК РАСПИСАНИЯ ==========
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabContents = document.querySelectorAll('.tab-content');
-
-tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        // Убираем активный класс у всех кнопок и контента
-        tabBtns.forEach(b => b.classList.remove('active'));
-        tabContents.forEach(c => c.classList.remove('active'));
-
-        // Добавляем активный класс нажатой кнопке и соответствующему контенту
-        btn.classList.add('active');
-        const tabId = btn.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
-    });
-});
